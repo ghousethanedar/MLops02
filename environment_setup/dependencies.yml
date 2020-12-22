@@ -14,6 +14,7 @@ dependencies:
   - azureml-sdk
   - azure-cli
   - scikit-learn==0.23
+  - -e src
 
 channels:
 - anaconda
