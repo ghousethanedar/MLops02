@@ -71,10 +71,11 @@ run_amlcompute.environment.python.conda_dependencies = CondaDependencies.create(
     'azure-storage-blob==2.1.0',
     'azureml-sdk',
     'azureml-dataprep[pandas]',
+    '-e src'
 
 ])
 
-scripts_folder = 'scripts'
+scripts_folder = 'src/my_custom_package/scripts'
 def_blob_store = ws.get_default_datastore()
 
 train_output = PipelineData('train_output', datastore=def_blob_store)
